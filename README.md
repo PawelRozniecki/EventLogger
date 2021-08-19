@@ -56,6 +56,38 @@ or
 ```
 ./gradlew build
 ```
+4. Run the application using command below. This will use the default logfile.txt stored in resources folder
+```
+gradle run
+```
+
+5. In case of using a custom file provide a absolute path to a file 
+```
+gradle run --args <path/to/file> 
+```
+
+## Output 
+
+You can see the output logs in the console after running the app.  It tells that DB connection was established, whetever the table was created and  prints the the table values
+
+### The sample log output
+
+```
+21:05:37.674 [main] INFO com.creditsuisse.pawelrozniecki.db.DatabaseConnection - Connection with DB established
+21:05:37.699 [main] INFO com.creditsuisse.pawelrozniecki.db.DatabaseConnection - TABLE events created
+21:05:37.702 [main] INFO com.creditsuisse.pawelrozniecki.db.DatabaseConnection - Row inserted
+21:05:37.702 [main] INFO com.creditsuisse.pawelrozniecki.db.DatabaseConnection - Row inserted
+21:05:37.702 [main] INFO com.creditsuisse.pawelrozniecki.db.DatabaseConnection - Row inserted
+21:05:37.702 [main] INFO com.creditsuisse.pawelrozniecki.db.DatabaseConnection - 3 rows inserted
+21:05:37.703 [main] DEBUG com.creditsuisse.pawelrozniecki.db.DatabaseConnection - scsmbstgra | 5 | APPLICATION_LOG | 12345 | true
+21:05:37.703 [main] DEBUG com.creditsuisse.pawelrozniecki.db.DatabaseConnection - scsmbstgrb | 3 | null | null | false
+21:05:37.703 [main] DEBUG com.creditsuisse.pawelrozniecki.db.DatabaseConnection - scsmbstgrc | 8 | null | null | true
+
+```
+
+The database files will be created and stored in db folder found in the root of the project
+
+
 
 ## Design
 
