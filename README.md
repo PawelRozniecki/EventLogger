@@ -82,7 +82,7 @@ You can see the output logs in the console after running the app.  It tells that
 21:05:37.703 [main] DEBUG com.creditsuisse.pawelrozniecki.db.DatabaseConnection - scsmbstgra | 5 | APPLICATION_LOG | 12345 | true
 21:05:37.703 [main] DEBUG com.creditsuisse.pawelrozniecki.db.DatabaseConnection - scsmbstgrb | 3 | null | null | false
 21:05:37.703 [main] DEBUG com.creditsuisse.pawelrozniecki.db.DatabaseConnection - scsmbstgrc | 8 | null | null | true
-
+21:05:37.705 [main] INFO com.creditsuisse.pawelrozniecki.LogReader - HSQL Server was stopped
 ```
 
 The database files will be created and stored in db folder found in the root of the project
