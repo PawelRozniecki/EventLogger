@@ -18,6 +18,7 @@ public class LogTests {
     private static final String missingFieldsPath = "../CreditSuisseAssignment/src/test/resources/missingFields.txt";
 
 
+    // empty file was removed from github repo because github doesn't allow for empty files
     @Test
     public void testEmptyFile() throws Exception {
         LogReader reader = new LogReader(emptyFile);
