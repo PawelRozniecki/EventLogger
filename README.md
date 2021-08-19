@@ -109,3 +109,10 @@ The program creates HSQLDB table for storing Flagged Events. CREATE TABLE IF NOT
 - testdb.properties 
 
 
+## Testing
+
+JUnit was used for creation of Unit tests
+
+- Tested both: Event Log processing and Database connection
+- Test coverage: 100%
+
