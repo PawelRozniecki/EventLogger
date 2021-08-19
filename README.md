@@ -116,3 +116,9 @@ JUnit was used for creation of Unit tests
 - Tested both: Event Log processing and Database connection
 - Test coverage: 100%
 
+To run test enter the commands 
+``` gradle test --tests LogTests
+```
+```
+gradle test --tests DbTests
+```
