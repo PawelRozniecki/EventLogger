@@ -27,7 +27,7 @@ public class LogReader {
         this.path = path;
     }
 
-    public Map<String, List<Event>> readFile(File file) {
+    public void  readFile(File file) {
         Map<String, List<Event>> eventMap = new HashMap<>();
         JSONParser jsonParser = new JSONParser();
         EventFlag eventFlagger = new EventFlag();
@@ -75,8 +75,6 @@ public class LogReader {
                 }
             }
         }
-
-        return eventMap;
     }
 
 
