@@ -54,4 +54,12 @@ At first the idea was to use Optional wrapper for host and type values to increa
 ### Enums
 Enum was used for storing event states
 
+### Database
+
+The program creates HSQLDB table for storing Flagged Events. CREATE TABLE IF NOT EXISTS query was used so that the table can only be created if it doesn't exist yet. Following files will be generated and stored in db folder found in root project: 
+- testdb.lck
+- testdb.log
+- testdb.script
+- testdb.properties 
+
 
