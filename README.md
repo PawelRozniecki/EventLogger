@@ -23,3 +23,17 @@ Application Server logs also have the following additional attributes:
 {"id":"scsmbstgrc", "state":"STARTED", "timestamp":1491377495210}
 {"id":"scsmbstgrb", "state":"FINISHED", "timestamp":1491377495216}
 ```
+
+Program should:
+
+* Take the path to logfile.txt as an input argument
+* Parse the contents of logfile.txt
+* Flag any long events that take longer than 4ms • Write the found event details to file-based HSQLDB (http://hsqldb.org/) in the working folder
+
+The application should create a new table if necessary and store the following values:
+*  Event id
+* Event duration
+* Type and Host if applicable
+* Alert (true if the event took longer than 4ms, otherwise false)
+
+## Solution
