@@ -36,4 +36,22 @@ The application should create a new table if necessary and store the following v
 * Type and Host if applicable
 * Alert (true if the event took longer than 4ms, otherwise false)
 
-## Solution
+## Requirments 
+- Java 8
+- Junit 4
+- HSQLDB
+- Gradle
+- Jackson (JSON processing) 
+
+## Design
+
+### Builder design pattern 
+Builder Design pattern was used for creation of AlertEvent objects because it adds design flexibility and results in more readable code.
+
+### Optional vs String 
+At first the idea was to use Optional wrapper for host and type values to increase readability of code and enhance null safty but it creates unecessary object allocation and can lead to NullPointerExceptions in some cases. Therefore String value was used, so whetever there's no host or type values provided , null value will be stored in database
+
+### Enums
+Enum was used for storing event states
+
+
