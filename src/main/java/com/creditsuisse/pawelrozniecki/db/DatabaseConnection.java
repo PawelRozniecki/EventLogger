@@ -19,6 +19,8 @@ public class DatabaseConnection implements DatabaseInterface {
     private final static String CREATE_TABLE_SQL = "CREATE TABLE IF NOT EXISTS events(id INTEGER IDENTITY PRIMARY KEY, logId VARCHAR(50) NOT NULL, duration BIGINT, alertType VARCHAR(50), host VARCHAR(50), alert BOOLEAN DEFAULT TRUE NOT NULL);";
     private final String db = "jdbc:hsqldb:file:db/testdb;ifexists=false";
     private final Server hsqlServer = new Server();
+
+
     private Connection connection;
 
 
@@ -112,19 +114,23 @@ public class DatabaseConnection implements DatabaseInterface {
         }
     }
 
-    public void stopServer(){
-        if(connection!=null){
-            try{
+    public void stopServer() {
+        if (connection != null) {
+            try {
                 connection.close();
                 hsqlServer.stop();
                 logger.info("HSQL Server was stopped");
-            }catch (SQLException e){
-                    logger.error("SQL Exception", e);
+            } catch (SQLException e) {
+                logger.error("SQL Exception", e);
             }
         }
     }
+
     public Server getHsqlServer() {
         return hsqlServer;
     }
 
+    public Connection getConnection() {
+        return connection;
+    }
 }
