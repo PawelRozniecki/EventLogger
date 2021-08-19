@@ -95,7 +95,7 @@ The database files will be created and stored in db folder found in the root of 
 Builder Design pattern was used for creation of AlertEvent objects because it adds design flexibility and results in more readable code.
 
 ### Optional vs String 
-At first the idea was to use Optional wrapper for host and type values to increase readability of code and enhance null safty but it creates unecessary object allocation and can lead to NullPointerExceptions in some cases. Therefore String value was used, so whetever there's no host or type values provided , null value will be stored in database
+At first the idea was to use Optional wrapper for host and type values to increase readability of code and enhance null safety but it creates unecessary object allocation and can lead to NullPointerExceptions in some cases. Therefore String value was used, so whetever there's no host or type values provided , null value will be stored in database
 
 ### Enums
 Enum was used for storing event states
