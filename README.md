@@ -43,6 +43,20 @@ The application should create a new table if necessary and store the following v
 - Gradle
 - Jackson (JSON processing) 
 
+
+## How to
+
+1. Download the project from this repo
+2. Navigate to project folder and build the project
+3. To build the project use command
+```
+gradle build
+```
+or
+```
+./gradlew build
+```
+
 ## Design
 
 ### Builder design pattern 
