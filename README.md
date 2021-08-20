@@ -41,8 +41,6 @@ The application should create a new table if necessary and store the following v
 - Junit 4
 - HSQLDB
 - Gradle
-- Jackson (JSON processing) 
-
 
 ## How to
 
