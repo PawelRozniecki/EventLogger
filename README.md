@@ -124,3 +124,8 @@ gradle test --tests LogTests
 ```
 gradle test --tests DbTests
 ```
+
+## What could've been done 
+
+- Lombok : this library would reduce the amount of redundant overall code such as getters and setters and could create Builder using @Builder annotation. 
+- Multithreading 
