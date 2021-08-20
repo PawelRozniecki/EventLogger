@@ -92,6 +92,9 @@ The database files will be created and stored in db folder found in the root of 
 ### Builder design pattern 
 Builder Design pattern was used for creation of AlertEvent objects because it adds design flexibility and results in more readable code.
 
+### Singleton design pattern
+Singleton was used to setup only one instance of the connection. The application does not require multiple connections to the database therefore using a singleton seemed like a good solution. 
+
 ### Optional vs String 
 At first the idea was to use Optional wrapper for host and type values to increase readability of code and enhance null safety but it creates unecessary object allocation and can lead to NullPointerExceptions in some cases. Therefore String value was used, so whether there's no host or type values provided , null value will be stored in database
 
